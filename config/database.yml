@@ -31,7 +31,10 @@ staging:
   password: <%= Rails.application.credentials[Rails.env.to_sym][:db][:password] %>
 
 production:
-  <<: *default
-  database: kr_force_production
-  username: <%= Rails.application.credentials[Rails.env.to_sym][:db][:username] %>
-  password: <%= Rails.application.credentials[Rails.env.to_sym][:db][:password] %>
+  adapter: postgresql
+  encoding: unicode
+  database: holypandadb
+  host: ec2-54-146-80-151.compute-1.amazonaws.com
+  pool: 5
+  username: holypanda
+  password: hello123
