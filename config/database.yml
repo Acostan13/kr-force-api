@@ -33,8 +33,8 @@ staging:
 production:
   adapter: postgresql
   encoding: unicode
-  database: holypandadb
+  database: postgres
   host: ec2-54-146-80-151.compute-1.amazonaws.com
   pool: 5
-  username: holypanda
+  username: postgres
   password: hello123
