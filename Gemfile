@@ -19,6 +19,7 @@ gem 'rack-cors', '~> 1.0', '>= 1.0.2'
 gem 'active_model_serializers', '~> 0.10.7', require: true
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

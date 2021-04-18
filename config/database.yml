@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  database: kr_force_development
+  database: kr_force_development  
   username: <%= ENV['DB_USERNAME'] || Rails.application.credentials[Rails.env.to_sym][:db][:username] %>
   password: <%= ENV['DB_PASSWORD'] || Rails.application.credentials[Rails.env.to_sym][:db][:password] %>
   host: localhost
